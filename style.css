@@ -1,0 +1,352 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #edf2f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Checkbox and Radio Styles */
+.checkbox-div, .radio-div {
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    display: none;
+}
+
+.checkbox-label, .radio-label {
+    position: relative;
+}
+
+.checkbox-label::before, .radio-label::before {
+    content: '';
+    display: inline-block;
+    background-color: #1d212d;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    margin-bottom: -9px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.checkbox-div input[type='checkbox']:checked + .checkbox-label::before {
+    background-color: #687ce8;
+    transition: 0.3s;
+}
+
+.checkbox-div input[type='checkbox']:checked + .checkbox-label::after {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.radio-label::before {
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.radio-div input[type='radio']:checked + .radio-label::before {
+    background-color: #687ce8;
+}
+
+.radio-div input[type='radio']:checked + .radio-label::after {
+    content: '';
+    display: inline-block;
+    background-color: #ffffff;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: 50%;
+    left: 10px;
+    top: 10px;
+}
+
+/* Selection Dropdown Styles */
+.selection-div {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+select, option {
+    background-color: #4a5567;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* Sidebar Styles */
+.left {
+    width: 25%;
+    background-color: #1a202c;
+    color: #667082;
+    height: 100%;
+}
+
+.control-p {
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 160px;
+    margin: 15px;
+}
+
+.controls {
+    background-color: #2e3748;
+    padding-top: 18px;
+}
+
+.controls > div {
+    padding-left: 15px;
+}
+
+.selections {
+    width: 100%;
+}
+
+.tselection {
+    display: flex;
+    padding: 0 20px 0 0;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.alone {
+    width: 90%;
+    display: flex;
+}
+
+.spacing {
+    margin: 15px 0;
+    border: solid #283142 2px;
+}
+
+.update {
+    width: 100%;
+}
+
+.update {
+    margin: 15px;
+}
+
+.update button {
+    background-color: #667eeb;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.update button:active {
+    opacity: .8;
+}
+
+/* Content Styles */
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    box-shadow: rgb(228, 228, 228) 1px 1px;
+    height: 6%;
+}
+
+.content .header .avatar img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.content .header .links {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.link {
+    margin: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.search input {
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #edf2f6;
+    margin: 0 10px;
+    width: 100%;
+    margin-left: 24px;
+    font-size: 18px;
+}
+
+.search {
+    position: relative;
+    background-color: #edf2f6;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.search::before {
+    font-family: 'FontAwesome';
+    content: '\f002';
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    font-size: 20px;
+    color: #8c8c8c;
+}
+
+/* Section Styles */
+section {
+    margin: 0 40px;
+}
+
+section .title {
+    margin: 15px 0;
+}
+
+section .discription {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .discription .short-discription {
+    color: #667082;
+}
+
+section .discription .more {
+    color: #0044ff;
+    font-size: 18px;
+}
+
+.states {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px; /* Adds space between .state elements */
+}
+
+.state {
+    position: relative;
+    width: calc(33.33% - 20px); /* Adjusts the width of .state elements */
+}
+
+.state .img img {
+    height: 250px;
+    border-radius: 10px;
+    width: 100%; /* Makes the image take the full width of .state */
+}
+
+.state .state-content {
+    background-color: white;
+    position: absolute;
+    bottom: -100px; /* Adjusts the positioning of .state-content */
+    width: calc(100% - 100px); /* Ensures the state-content fits within .state */
+    border-radius: 10px;
+    padding: 20px;
+    left: 20px;
+}
+
+
+.state-header {
+    display: flex;
+    align-items: center;
+}
+
+.plus {
+    margin-right: 10px;
+    background-color: #aff5ec;
+    color: #435352;
+    padding: 2px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.inside {
+    color: #717171;
+}
+
+.dash {
+    margin: 0 2px;
+}
+
+.stitle {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.in-time {
+    color: #717171;
+    font-size: 16px;
+}
+
+.state-footer {
+    display: flex;
+}
+
+.stars {
+    margin-right: 10px;
+}
+
+.reviews {
+    color: #717171;
+}
+
+.star-active {
+    color: #4fa9a0;
+}
+
+.star-inactive {
+    color: #d2d7db;
+}

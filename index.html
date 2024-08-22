@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <link rel='stylesheet' href='style.css'>
+    <meta name=viewport content='width=device-width, initial-scale=1.0'>
+    <script src="https://kit.fontawesome.com/0f2bd64f23.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="left">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+        </div>
+        <div class="controls">
+            <div class="selections">
+                <div class="tselection">
+                    <div class="selection-div">
+                        <label for="bedrooms" class="control-p">Bedrooms</label>
+                        <select name="bedrooms" id="bedrooms">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="selection-div">
+                        <label for="bathrooms" class="control-p">Bathrooms</label>
+                        <select name="bathrooms" id="bathrooms">
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="selection-div alone">
+                    <label for="range" class="control-p">Price Range</label>
+                    <select style="width: 100%;" name="range" id="range">
+                        <option value="2000" selected>Up tp $2,000 /month</option>
+                        <option value="3000">Up tp $3,000 /month</option>
+                        <option value="4000">Up tp $4,000 /month</option>
+                    </select>
+                </div>
+            </div>
+            <hr class="spacing">
+
+            <div class="radios">
+                <p class="control-p">Property type</p>
+                <div class="radio-div">
+                    <input type="radio" name="pt" id="pt1">
+                    <label for="pt1" class="radio-label">House</label>
+                </div>
+                <div class="radio-div">
+                    <input type="radio" name="pt" id="pt2">
+                    <label for="pt2" class="radio-label">Apartment</label>
+                </div>
+                <div class="radio-div">
+                    <input type="radio" name="pt" id="pt3">
+                    <label for="pt3" class="radio-label">Loft</label>
+                </div>
+                <div class="radio-div">
+                    <input type="radio" name="pt" id="pt4">
+                    <label for="pt4" class="radio-label">Townhouse</label>
+                </div>
+            </div>
+            <hr class="spacing">
+
+            <div class="checkboxs">
+                <p class="control-p">Amenities</p>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="c1">
+                    <label for="c1" class="checkbox-label">Balcony</label>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="c2">
+                    <label for="c2" class="checkbox-label">Air conditioning</label>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="c3">
+                    <label for="c3" class="checkbox-label">Pool</label>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="c4">
+                    <label for="c4" class="checkbox-label">Beach</label>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="c5">
+                    <label for="c5" class="checkbox-label">Pet friendly</label>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="c6">
+                    <label for="c6" class="checkbox-label">Kid friendly</label>
+                </div>
+                <div class="checkbox-div">
+                    <input type="checkbox" id="c7">
+                    <label for="c7" class="checkbox-label">Parking</label>
+                </div>
+            </div>
+        </div>
+        <div class="update">
+            <button>Update Results</button>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="header">
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search by keywords">
+            </div>
+            <div class="links">
+                <a href="#" class="link">List your property</a>
+                <a href="#" class="link">Trips</a>
+                <a href="#" class="link">Messages</a>
+                <a href="#" class="link">Support</a>
+                <div class="avatar">
+                    <a href="#"><img src="imgs/avatar.JPG" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="section-title">
+                <h2 class="title">Los Angeles</h2>
+                <div class="discription">
+                    <p class="short-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus
+                        deserunt ad exercitationem mollitia dolore accusamus</p>
+                    <a href="#" class="more">View all</a>
+                </div>
+            </div>
+            <div class="states">
+                <div class="state">
+                    <div class="img">
+                        <img src="imgs/state.jpeg" alt="">
+                    </div>
+                    <div class="state-content">
+                        <div class="state-header">
+                            <p class="plus">plus</p>
+                            <p class="inside">3 Beds <span class="dash">-</span> 2 Baths</p>
+                        </div>
+                        <div class="state-title">
+                            <p class="stitle">Modern home in city center</p>
+                            <p class="price">$1,400 <span class="in-time">/month</span></p>
+                        </div>
+                        <div class="state-footer">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                            </div>
+                            <p class="reviews">34 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="img">
+                        <img src="imgs/state.jpeg" alt="">
+                    </div>
+                    <div class="state-content">
+                        <div class="state-header">
+                            <p class="plus">plus</p>
+                            <p class="inside">3 Beds <span class="dash">-</span> 2 Baths</p>
+                        </div>
+                        <div class="state-title">
+                            <p class="stitle">Modern home in city center</p>
+                            <p class="price">$1,400 <span class="in-time">/month</span></p>
+                        </div>
+                        <div class="state-footer">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                            </div>
+                            <p class="reviews">34 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="img">
+                        <img src="imgs/state.jpeg" alt="">
+                    </div>
+                    <div class="state-content">
+                        <div class="state-header">
+                            <p class="plus">plus</p>
+                            <p class="inside">3 Beds <span class="dash">-</span> 2 Baths</p>
+                        </div>
+                        <div class="state-title">
+                            <p class="stitle">Modern home in city center</p>
+                            <p class="price">$1,400 <span class="in-time">/month</span></p>
+                        </div>
+                        <div class="state-footer">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                            </div>
+                            <p class="reviews">34 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 120px;">
+            <div class="section-title">
+                <h2 class="title">Los Angeles</h2>
+                <div class="discription">
+                    <p class="short-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus
+                        deserunt ad exercitationem mollitia dolore accusamus</p>
+                    <a href="#" class="more">View all</a>
+                </div>
+            </div>
+            <div class="states">
+                <div class="state">
+                    <div class="img">
+                        <img src="imgs/state.jpeg" alt="">
+                    </div>
+                    <div class="state-content">
+                        <div class="state-header">
+                            <p class="plus">plus</p>
+                            <p class="inside">3 Beds <span class="dash">-</span> 2 Baths</p>
+                        </div>
+                        <div class="state-title">
+                            <p class="stitle">Modern home in city center</p>
+                            <p class="price">$1,400 <span class="in-time">/month</span></p>
+                        </div>
+                        <div class="state-footer">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                            </div>
+                            <p class="reviews">34 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="img">
+                        <img src="imgs/state.jpeg" alt="">
+                    </div>
+                    <div class="state-content">
+                        <div class="state-header">
+                            <p class="plus">plus</p>
+                            <p class="inside">3 Beds <span class="dash">-</span> 2 Baths</p>
+                        </div>
+                        <div class="state-title">
+                            <p class="stitle">Modern home in city center</p>
+                            <p class="price">$1,400 <span class="in-time">/month</span></p>
+                        </div>
+                        <div class="state-footer">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                            </div>
+                            <p class="reviews">34 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="img">
+                        <img src="imgs/state.jpeg" alt="">
+                    </div>
+                    <div class="state-content">
+                        <div class="state-header">
+                            <p class="plus">plus</p>
+                            <p class="inside">3 Beds <span class="dash">-</span> 2 Baths</p>
+                        </div>
+                        <div class="state-title">
+                            <p class="stitle">Modern home in city center</p>
+                            <p class="price">$1,400 <span class="in-time">/month</span></p>
+                        </div>
+                        <div class="state-footer">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                                <i class="fa-solid fa-star star-active"></i>
+                            </div>
+                            <p class="reviews">34 Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src='main.js'></script>
+</body>
+
+</html>
